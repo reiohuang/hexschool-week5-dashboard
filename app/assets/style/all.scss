@@ -1,23 +1,11 @@
-$color: #00cc99;
+@import "./node_modules/bootstrap/scss/functions";
+@import "./helps/variable"; // 複製一份 variable 來覆蓋
+@import "./node_modules/bootstrap/scss/mixins";
+@import "./node_modules/bootstrap/scss/bootstrap";
 
-.header {
-  height: 200px;
-  background-color: #00cc99;
-}
+@import "./helps/reset";    // reset.css
+@import './helps/utility';  // 工具類 工具類 class，.mb-1、.pr-3
+@import "./helps/base";     // 全站設定
+@import "./helps/layout";   // 共同框架
 
-.footer {
-  height: 200px;
-  background-color: #00cc99;
-}
-
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: flex;
-  transition: all 0.5s;
-  &:hover {
-    width: 200px;
-    background-color: $color;
-  }
-}
+@import "./pages/admin";

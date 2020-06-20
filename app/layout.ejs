@@ -6,23 +6,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title><%- title %></title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
 <body>
-  <header class="header">
-    這是 header
-  </header>
+  <div class="wrap">
+    <!-- 側邊欄 -->
+    <aside class="sidebar p-32 d-flex flex-column justify-content-between">
+      <div>
+        <h1><a href=""><img src="./assets/images/logo-ANSWER.svg" alt=""></h1>
+        <ul class="nav flex-column">
+          <li class="nav-item"><a href="#" class="nav-link"><i
+                class="material-icons">insert_chart</i>Dashboard</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link"><i
+                class="material-icons">question_answer</i>Question</a></li>
+          <li class="nav-item"><a href="#" class="nav-link"><i
+                class="material-icons">assignment</i>Assignment</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link"><i
+                class="material-icons">video_library</i>Course</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link"><i
+                class="material-icons">people</i>Admin</a></li>
+          <li class="nav-item"><a href="#" class="nav-link"><i
+                class="material-icons">settings</i>Settings</a>
+          </li>
+        </ul>
+      </div>
+      <!-- 管理者資訊 -->
+      <div class="managerInfo d-flex align-items-center">
+        <img class="andy-img mr-3" src="./assets/images/andychen.jpg" alt="">
+        <div>
+          <span class="userName font-weight-bold">Andy Chen</span>
+          <span class="userEmail">andy0401@mail.com</span>
+        </div>
+      </div>
+    </aside>
+
+  </div>
 
   <%- contents %>
 
-  <footer class="footer">
-    footer
-  </footer>
 
-
-  <script src="./assets/js/vendors.js"></script>
-  <script src="./assets/js/all.js"></script>
 </body>
 
 </html>
