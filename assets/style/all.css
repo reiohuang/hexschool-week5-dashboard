@@ -8403,6 +8403,9 @@ img {
 .mb-40 {
   margin-bottom: 40px; }
 
+.mb-64 {
+  margin-bottom: 64px; }
+
 .p-32 {
   padding: 32px; }
 
@@ -8418,6 +8421,29 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   font-weight: bold; }
 
+h2 {
+  font-size: 24px; }
+
+.material-icons {
+  vertical-align: middle; }
+
+.text-sm {
+  font-size: 0.875rem; }
+
+.btn:hover {
+  color: #2a8356; }
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+  border-color: #CDDDCD; }
+
+.main {
+  width: 100%;
+  margin-left: 296px; }
+
 .wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8427,9 +8453,12 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: 0;
   bottom: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
   background-color: #EDF4EE;
   width: 296px; }
-  .sidebar h1 {
+  .sidebar .logo {
+    padding-left: 32px;
     margin-bottom: 32px; }
 
 .nav .material-icons {
@@ -8438,17 +8467,24 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav .nav-item {
   position: relative;
-  cursor: pointer;
-  margin-bottom: 29px; }
+  margin-bottom: 16px; }
 
 .nav .nav-link {
-  padding: 0; }
+  padding: 4px 32px; }
 
 .nav a {
   font-weight: bold;
   color: #121212; }
   .nav a:hover {
-    color: #2a8356; }
+    color: #2a8356;
+    background-color: #fff; }
+  .nav a:hover::before {
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0px;
+    height: 32px;
+    border-left: 4px solid #2a8356; }
 
 .nav .active {
   color: #2a8356; }
@@ -8461,6 +8497,9 @@ h1, h2, h3, h4, h5, h6 {
     height: 32px;
     background: #2a8356; }
 
+.managerInfo {
+  padding-left: 32px; }
+
 .andy-img {
   width: 40px;
   height: 40px;
@@ -8470,5 +8509,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .userEmail {
   color: #0000009A; }
+
+.admin .table thead .material-icons {
+  font-size: 18px; }
+
+.admin .table thead th {
+  border: none;
+  border-bottom: 1px solid #121212; }
 
 /*# sourceMappingURL=all.css.map */
