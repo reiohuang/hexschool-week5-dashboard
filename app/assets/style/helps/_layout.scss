@@ -5,13 +5,16 @@
 .sidebar {
 position: fixed;
 top: 0;
-  bottom: 0;
-  background-color: $primary;
-  width: 296px;
+bottom: 0;
+padding-top: 32px;
+padding-bottom: 32px;
+background-color: $primary;
+width: 296px;
 
-  h1 {
-      margin-bottom: 32px;
-  }
+.logo {
+  padding-left: 32px;
+  margin-bottom: 32px;
+}
 }
 
 .nav {
@@ -22,21 +25,29 @@ top: 0;
 
   .nav-item {
     position: relative;
-    cursor: pointer;
-    margin-bottom: 29px;
+    margin-bottom: 16px;
   }
 
   .nav-link {
-    padding: 0;
+    padding: 4px 32px;
   }
 
   a {
     font-weight: bold;
-    // line-height: 1.5;
     color: $dark;
-
+      
     &:hover {
       color: $secondary;
+      background-color: $white;
+    }
+
+    &:hover::before {
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0px;
+    height: 32px;
+    border-left: 4px solid $secondary;
     }
   }
 
@@ -53,6 +64,10 @@ top: 0;
       background: $secondary;
     }
   }
+}
+
+.managerInfo {
+  padding-left: 32px;
 }
 
 .andy-img {

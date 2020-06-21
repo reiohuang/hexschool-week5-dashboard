@@ -16,10 +16,11 @@
 
 <body>
   <div class="wrap">
-    <!-- 側邊欄 -->
-    <aside class="sidebar p-32 d-flex flex-column justify-content-between">
+    <!-- Sidebar -->
+    <aside class="sidebar d-flex flex-column justify-content-between">
       <div>
-        <h1><a href=""><img src="./assets/images/logo-ANSWER.svg" alt=""></h1>
+        <h1 class="logo"><a href=""><img src="./assets/images/logo-ANSWER.svg"
+              alt=""></h1>
         <ul class="nav flex-column">
           <li class="nav-item"><a href="#" class="nav-link"><i
                 class="material-icons">insert_chart</i>Dashboard</a>
@@ -32,14 +33,14 @@
           <li class="nav-item"><a href="#" class="nav-link"><i
                 class="material-icons">video_library</i>Course</a>
           </li>
-          <li class="nav-item"><a href="#" class="nav-link"><i
+          <li class="nav-item"><a href="admin.html" class="nav-link"><i
                 class="material-icons">people</i>Admin</a></li>
           <li class="nav-item"><a href="#" class="nav-link"><i
                 class="material-icons">settings</i>Settings</a>
           </li>
         </ul>
       </div>
-      <!-- 管理者資訊 -->
+      <!-- Manager Information -->
       <div class="managerInfo d-flex align-items-center">
         <img class="andy-img mr-3" src="./assets/images/andychen.jpg" alt="">
         <div>
@@ -49,10 +50,12 @@
       </div>
     </aside>
 
+    <%- contents %>
+
   </div>
 
-  <%- contents %>
-
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
 
 </body>
 
